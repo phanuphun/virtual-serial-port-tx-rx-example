@@ -1,0 +1,12 @@
+## Note
+- Virtual serial port use com0com
+    - use version 2.2.2.0 because signed version 3 is not working on window 11
+    - version 2.2.2.0 can use `setupc.exe` to start command line  
+    - download link https://sourceforge.net/projects/com0com/files/com0com/
+- com0com command 
+    - `install PortName=COM5 PortName=COM6` create virtual comport pair
+    - `uninstall` : uninstall all  virtual comport
+    - `list` : list all virtual comport
+- CMD command check port
+    - `mode com5:` : check com port 
+    - `mode com5: baud=9600 parity=n data=8 stop=1` : change board rate.
